@@ -1,0 +1,93 @@
+.scroll-box, .scroll-target {
+  overflow: hidden;
+  position: relative;
+  zoom: 1;
+}
+
+.scroll-bar,
+.scroll-corner,
+.scroll-button,
+.scroll-track,
+.scroll-thumb {
+  position: absolute;
+  zoom: 1;
+  overflow: hidden;
+}
+
+.scroll-bar {
+  z-index: 10;
+}
+
+.scroll-button-top {
+  top: 0;
+}
+
+.scroll-button-bottom {
+  bottom: 0;
+}
+
+.scroll-button-left {
+  left: 0;
+}
+
+.scroll-button-right {
+  right: 0;
+}
+
+.scroll-box-default .scroll-bar {
+  background: #fff;
+}
+.scroll-box-default .scroll-bar-vertical {
+  width: 15px;
+}
+.scroll-box-default .scroll-bar-vertical .scroll-track {
+  top: 15px;
+  width: 15px;
+}
+.scroll-box-default .scroll-bar-vertical .scroll-thumb {
+  width: 7px;
+  left: 4px;
+}
+.scroll-box-default .scroll-bar-horizontal {
+  height: 15px;
+}
+.scroll-box-default .scroll-bar-horizontal .scroll-track {
+  left: 16px;
+  height: 15px;
+}
+.scroll-box-default .scroll-bar-horizontal .scroll-thumb {
+  height: 7px;
+  top: 4px;
+}
+.scroll-box-default .scroll-bar-hover, .scroll-box-default .scroll-bar-hold {
+  background: #f0f0f0;
+}
+.scroll-box-default .scroll-button {
+  width: 15px;
+  height: 15px;
+  background: url("default.gif");
+}
+.scroll-box-default .scroll-button-top {
+  background-position: 0 0;
+}
+.scroll-box-default .scroll-button-bottom {
+  background-position: 0 -15px;
+}
+.scroll-box-default .scroll-button-left {
+  background-position: -15px 0;
+}
+.scroll-box-default .scroll-button-right {
+  background-position: -15px -15px;
+}
+.scroll-box-default .scroll-thumb {
+  background: #000;
+  font-size: 0/0 a;
+  *overflow: hidden;
+}
+.scroll-box-default .scroll-corner {
+  width: 15px;
+  height: 15px;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+}

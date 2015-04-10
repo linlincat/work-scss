@@ -1,0 +1,140 @@
+/**
+ * floor-right  首页楼层-右侧
+ * --------------------------------------------------
+ */
+
+.floor-right {
+    width: 1000px;
+    float: left;
+
+    .floor-list {
+        width: 1000px;
+        height: 390px;
+        overflow: overflow;
+
+        @at-root .floor-imgList {
+            width: 610px;
+            height: 390px;
+            overflow: hidden;
+
+            .imgList-up {
+                width: 610px;
+                height: 222px;
+                li {
+                    float: left;
+                    display: inline;
+                    width: 202px;
+                    height: 221px;
+                    border-bottom: 1px solid #e4e4e4;
+                    border-right: 1px solid #e4e4e4;
+                    img {
+                        width: 202px;
+                        height: 220px;
+                        overflow: hidden;
+                        border: 0px;
+                    }
+                }
+            }
+            .imgList-down {
+                width: 610px;
+                height: 168px;
+                li {
+                    float: left;
+                    display: inline;
+                    width: 202px;
+                    height: 167px;
+                    border-bottom: 1px solid #e4e4e4;
+                    border-right: 1px solid #e4e4e4;
+                    img {
+                        width: 202px;
+                        height: 108px;
+                        overflow: hidden;
+                        border: 0px;
+                    }
+
+                    p {
+                        padding-left: 10px;
+                        width: 192px;
+                        height: 24px;
+                        line-height: 24px;
+                        color: $basic;
+                        overflow: hidden;
+                    }
+                    h2 {
+                        padding-left: 10px;
+                        width: 192px;
+                        height: 36px;
+                        font-size: 14px;
+                        line-height: 27px;
+                        color: $primary-color;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+
+        .fl-img {
+            width: 390px;
+            height: 390px;
+            img {
+                width: 390px;
+                height: 390px;
+                border: 0px;
+            }
+        }
+    }
+
+    .floor-nav {
+        position: relative;
+        width: 1000px;
+        height: 40px;
+        color: $basic;
+        line-height: 40px;
+        background-color: #f4f8f7;
+
+        &.fn-01 {
+            border-bottom: 1px solid #3cb38d;
+        }
+        &.fn-02 {
+            border-bottom: 1px solid #883966;
+        }
+        &.fn-03 {
+            border-bottom: 1px solid #ff649d;
+        }
+        &.fn-04 {
+            border-bottom: 1px solid #db6b15;
+        }
+        &.fn-05 {
+            border-bottom: 1px solid #155970;
+        }
+
+        li {
+            margin-left: 20px;
+            float: left;
+            display: inline;
+            width: 175px;
+            height: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+
+    $animal-data: (floor-01, #3cb38d),(floor-02, #883966),(floor-03, #ff649d),(floor-04, #db6b15),(floor-05, #155970);
+    @each $name, $color in $animal-data {
+      .#{$name}-nav {
+        margin-left: 20px;
+        background-color: $color;
+        color: white;
+      }
+    }
+
+    $animal-data: (floor-01, #3cb38d),(floor-02, #883966),(floor-03, #ff649d),(floor-04, #db6b15),(floor-05, #155970);
+    @each $name, $color in $animal-data {
+      .#{$name}-navhover {
+        margin-left: 20px;
+        background-color: $color;
+        color: white;
+      }
+    }
+}

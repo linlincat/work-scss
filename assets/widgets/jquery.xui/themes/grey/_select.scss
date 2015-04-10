@@ -1,0 +1,130 @@
+/* 单选复选框
+--------------------------------*/
+.xui-select {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+
+    width: 120px;
+    height: 24px;
+
+    position: relative;
+    top: -2px;
+    *top: 0;
+
+    background: #fff;
+    border: 1px solid #ddd;
+
+    font-size: 12px;
+    line-height: 24px;
+
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.xui-select-disabled {
+    background: #f0f0f0;
+    color: #aaa;
+    cursor: default;
+}
+
+.xui-select select {
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    visibility: hidden;
+}
+
+.xui-select-head {
+    padding: 0 24px 0 7px;
+}
+
+.xui-select-text {
+    width: 100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.xui-select-tr {
+    display: block;
+    width: 7px;
+    height: 4px;
+
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    margin-top: -2px;
+
+    background: url(img/select-arrow.png?__sprite);
+}
+
+.xui-select-option-list-box {
+    display: none;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-height: 200px;
+
+    position: absolute;
+    left: -1px;
+    top: 25px;
+    z-index: 999;
+
+    border: 1px solid #ddd;
+    border-top: 0;
+
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.xui-select-option-list-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.xui-select-option-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.xui-select-option-list li {
+    zoom: 1;
+}
+
+.xui-select-option {
+    display: block;
+    padding: 0 7px;
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    _zoom: 1;
+}
+
+.xui-select-option-selected,
+.xui-select-option:hover {
+    background: #ddd;
+}
+
+.xui-select-option span {
+    display: block;
+    width: 100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}

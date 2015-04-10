@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+////
+/// Mixins
+/// Some things in CSS are a bit tedious to write,
+/// especially with CSS3 and the many vendor prefixes that exist.
+/// A mixin lets you make groups of CSS declarations that you want to reuse throughout your site.
+/// You can even pass in values to make your mixin more flexible.
+/// A good use of a mixin is for vendor prefixes. Here's an example for border-radius.
+///
+/// @group API
+/// @author co-mall
+////
+
+/// Mixin helping defining both `width` and `height` simultaneously.
+///
+/// @author Hugo Giraudel
+///
+/// @access public
+///
+/// @param {Length} $width - Element's `width`
+/// @param {Length} $height ($width) - Element's `height`
+///
+/// @example scss - Usage
+///   .foo {
+///     @include size(10em);
+///   }
+///
+///   .bar {
+///     @include size(100%, 10em);
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     width: 10em;
+///     height: 10em;
+///   }
+///
+///   .bar {
+///     width: 100%;
+///     height: 10em;
+///   }
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

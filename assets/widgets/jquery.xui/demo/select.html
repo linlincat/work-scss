@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+        <link href="../themes/grey/jquery.xui.css" rel="stylesheet" />
+        <style>
+        body { margin: 0; font-size: 12px; color: #555; }
+        h2 { margin: 0; padding: 20px; background: #333; color: #fff; }
+        h3 { font-size: 12px; padding: 0 20px; margin: 30px 0 20px; line-height: 30px; font-weight: 300;  background: #333; color: #fff;position: relative; }
+        h3 span { position: absolute; line-height: 30px; right: 20px; top: 0; color: #aaa; font-size: 12px; }
+        form { padding: 0 20px; margin: 10px 0; }
+        .button-bar { padding: 0 20px; }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <h2>美化原生控件（单/复选框，下拉列表）</h2>
+
+            <p>
+                通过将原生控件封装为自定义控件的方式以实现样式自定义，
+                同时在对自定义控件的任何操作都将同步到原生控件中。
+            </p>
+
+            <h3>1,xui组件 select<br/><span>jquery.xui.select.js</span></h3>
+            <form id="xui-select">
+                <!-- 一般情况下，只需提供一个 select 即可，在页面加载时将其封装为 UI 控件。 -->
+                <select>
+                    <option>option 1</option>
+                    <option>option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                </select>
+                <!-- 不过这样在页面加载较慢时，会有一点闪烁，影响美观，
+                     若不希望出现这种问题，可以手动编写控件代码，并将 select 放在控件内，
+                     之后在 JS 中初始化时，会自动为其加载选项，并绑定事件。 -->
+                <div class="xui-select">
+                    <div class="xui-select-head">
+                        <div class="xui-select-text">Bios Sun</div>
+                        <i class="xui-select-tr"></i>
+                    </div>
+                    <ul class="xui-select-option-list"></ul>
+                    <select>
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                        <option>option 4</option>
+                        <option selected>option 5</option>
+                    </select>
+                </div>
+            </form>
+            <div class="button-bar">
+                <button id="select-init">封装所有下拉列表</button>
+                <button id="select-destroy">解除所有下拉列表控件</button><br />
+                <button id="select-disable">禁用所有下拉列表</button>
+                <button id="select-enable">激活所有下拉列表</button><br />
+                <button id="select-add-option">添加选项</button>
+                <button id="select-remove-option">删除选项</button><br />
+                选择第 <input id="select-select"> 个选项
+            </div>
+
+            <h4>注意事项</h4>
+            <ul>
+                <li>不支持 fieldset 及任何上级元素的 disabled 属性</li>
+                <li>使用 js 更改所选中项后，必须触发 change 事件以更新 UI</li>
+                <li>使用 js 增加，删除或修改选项后，必须调用 refresh 操作以更新 UI</li>
+                <li>不支持多选</li>
+                <li>不支持 optgrunt 元素</li>
+                <li>不支持 option 的 disabled 属性</li>
+                <li>当控件在被设置为 `overflow: hidden;` 的元素中时，其超出部分会被隐藏</li>
+            </ul>
+        </div>
+
+
+        <div class="row">
+            <h3>2,xui组件 check<br/><span>jquery.xui.check.js</span></h3>
+
+            <form id="xui-check-checkbox">
+                <label for="checkbox-1"><input id="checkbox-1" type="checkbox" name="cb" value="1" checked /> checkbox 1</label>
+                <label for="checkbox-2"><input id="checkbox-2" type="checkbox" name="cb" value="2" checked /> checkbox 2</label>
+                <label for="checkbox-3"><input id="checkbox-3" type="checkbox" name="cb" value="3" checked disabled /> checkbox 3</label>
+            </form>
+            <form id="xui-check-radio">
+                <label for="radio-1"><input id="radio-1" type="radio" name="ra" value="1"  /> radio 1</label>
+                <label for="radio-2"><input id="radio-2" type="radio" name="ra" value="2"  /> radio 2</label>
+                <label for="radio-3"><input id="radio-3" type="radio" name="ra" value="3" disabled checked /> radio 3</label>
+            </form>
+            <form id="xui-check-literals">
+                <label>
+                    <div class="xui-checkbox xui-checkbox-checked">
+                        <input type="checkbox" name="cb" value="1" checked />
+                    </div>
+                    checkbox 1
+                </label>
+                <label>
+                    <div class="xui-checkbox">
+                        <input type="checkbox" name="cb" value="2" />
+                    </div>
+                    checkbox 2
+                </label>
+                <label>
+                    <div class="xui-checkbox">
+                        <input type="checkbox" name="cb" value="3" />
+                    </div>
+                    checkbox 3
+                </label>
+                <br />
+                <label>
+                    <div class="xui-radio xui-radio-checked">
+                        <input type="radio" name="ra" value="1" checked />
+                    </div>
+                    radio 1
+                </label>
+                <label>
+                    <div class="xui-radio">
+                        <input type="radio" name="ra" value="2" />
+                    </div>
+                    radio 2
+                </label>
+                <label>
+                    <div class="xui-radio">
+                        <input type="radio" name="ra" value="3" />
+                    </div>
+                    radio 3
+                </label>
+            </form>
+            <div class="button-bar">
+                <button id="check-init">封装</button>
+                <button id="check-destroy">解除</button><br />
+                <button id="check-enable">激活</button>
+                <button id="check-disable">禁用</button><br />
+                <button id="check-check">全选</button>
+                <button id="check-uncheck">取消</button>
+                <button id="check-toggle">反选</button>
+            </div>
+
+            <h4>注意事项</h4>
+            <ul>
+                <li>不支持 fieldset 及任何上级元素的 disabled 属性</li>
+                <li>使用 js 修改表单元素的 checked 属性后，必须触发 change 事件以更新 UI</li>
+                <li>使用 js 修改表单元素的 disabled 属性后，必须调用 refresh 操作以更新 UI</li>
+            </ul>
+        </div>
+    </body>
+</html>
+
+<script src="/resource/lib/jquery/jquery-1.11.0.js"></script>
+<script src="../jquery.xui.select.js"></script>
+<script src="../jquery.xui.check.js"></script>
+<script>
+/**
+ * xui 的使用方式和 jquery ui 基本相同。
+ *
+ * 其中 xselect 方法用于操作下拉列表控件；在无参调用时，将初始化下拉列表；
+ * 而在传入一个字符串参数时，该字符串代表操作名称，将执行该操作。
+ *
+ * xcheck 用于操作单/复选框，其调用方式与 xselect 相同。
+ *
+ * 这两个方法都可以在任何 jQuery 对象中调用，调用时将在 jQuery 对象中查找出所有可操作的元素并进行相关操作（如 select, input 等）。
+ * 操作完成后，若无明确说明，将直接返回调用时的 jQuery 对象以方便进行链式调用，比如现有如下结构：
+ *
+ * ```html
+ * <form id="form"><select id="select"></select></form>
+ * ```
+ *
+ * 那么 `$('#form').xselect()` 与 `$('#select').xselect()` 效果相同。
+ */
+$(function () {
+    var form = $('#xui-select');
+
+    form.xselect();
+
+    $.each([ 'init', 'destroy', 'disable', 'enable' ], function(i, operateName) {
+        $('#select-' + operateName).click(function() {
+            form.xselect(operateName === 'init' ? undefined : operateName);
+        });
+    });
+
+    $('#select-add-option').click(function() {
+        form.find('select').append(function() {
+            return '<option>option ' + ($(this).find('option').length + 1) + '</option>';
+        });
+        form.xselect('refresh');
+        form.xselect('select', form.find('select option:last-child'));
+    });
+
+    $('#select-remove-option').click(function() {
+        form.find('option:last-child').remove();
+        form.xselect('refresh');
+        form.xselect('select', form.find('select option:last-child'));
+    });
+
+    $('#select-select').keyup(function() {
+        var number = parseInt($(this).val(), 10);
+        if (number) {
+            form.find('option:nth-child(' + number + ')').each(function() {
+                this.selected = true;
+            });
+        }
+        form.find('select').trigger('change');
+    });
+});
+
+$(function () {
+    var checkboxForm = $('#xui-check-checkbox'),
+    radioForm = $('#xui-check-radio'),
+    literalsForm = $('#xui-check-literals'),
+
+    allForm = checkboxForm.add(radioForm).add(literalsForm);
+
+    allForm.xcheck();
+
+    $.each(['init', 'check', 'uncheck', 'toggle', 'disable', 'enable', 'destroy'], function(i, operateName) {
+        $('#check-' + operateName).click(function() {
+            allForm.xcheck(operateName === 'init' ? undefined : operateName);
+        });
+    });
+});
+</script>

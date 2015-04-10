@@ -1,0 +1,91 @@
+/**
+ * 底部 - footer
+ * --------------------------------------------------
+ */
+
+.bottom-footer {
+    height: 32px;
+    background-color: #1a1a1a;
+    .footer-box01 {
+        .no-margin {
+            margin-left:0px;
+        }
+        a {
+            margin: 0 20px;
+            color: white;
+        }
+        padding-left: 120px;
+        line-height: 32px;
+        color: $quiet-font-color;
+    }
+}
+
+.bottom-footer1 {
+    padding-bottom: 95px;
+    background-color: #3a3a3a;
+    .footer-box02 {
+        padding-left: 120px;
+        color: $quiet-font-color;
+        .line1 {
+            padding-top: 14px;
+            p {
+                line-height: 26px;
+            }
+        }
+
+        .line2 {
+            padding: 26px 0 16px 0;
+        }
+
+        li {
+            margin-right: 5px;
+            float: left;
+            display: inline;
+        }
+    }
+}
+
+
+.bottom-footer02 {
+    text-align: center;
+    color: #717171;
+
+    @at-root .footer-infos {
+        padding-top: 8px;
+
+        .p-infos {
+            margin-top: 20px;
+            line-height: 22px;
+
+            .line {
+                padding-top: 26px;
+            }
+        }
+    }
+    a {
+        margin: 0 20px;
+        color: $primary-color;
+    }
+
+    ul {
+        padding-top: 14px;
+    }
+    li {
+        display: inline;
+    }
+}
+
+
+.turn-style {
+    .bottom-footer {
+        .footer-box01 {
+            padding-left: 78px;
+        }
+    }
+    .bottom-footer1 {
+        .footer-box02 {
+            padding-left: 78px;
+        }
+    }
+}
+

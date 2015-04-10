@@ -1,0 +1,21 @@
+/* 屏幕锁
+--------------------------------*/
+.xui-lock {
+    font-size: 12px;
+
+    position: fixed;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+
+    width: 68px;
+    height: 18px;
+    margin-top: -9px;
+    margin-left: -9px;
+    padding-left: 22px;
+
+    background: url(../../../../img/wait.gif) left center no-repeat;
+
+    _position: absolute;/*IE6*/
+    _top: expression(eval(documentElement.scrollTop + (document.documentElement.clientHeight)/2));
+}

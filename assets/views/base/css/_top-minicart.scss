@@ -1,0 +1,151 @@
+/**
+ * 头部 - 小购物车
+ * --------------------------------------------------
+ */
+
+.top-minicart {
+    color: $background-color;
+
+    position: relative;
+    margin-top: 34px;
+    width: 142px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 42px;
+    text-indent: 3em;
+    background: url('../img/sprites/sprites.png');
+    cursor: pointer;
+
+    &.hover {
+        color: $quiet-font-color;
+
+        background: url('../img/sprites/sprites.png') no-repeat 0px -43px;
+
+        span {
+            color: $primary-color;
+        }
+
+    }
+
+    .i {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 23px;
+        height: 23px;
+
+        &-default {
+            margin-top: 10px;
+            margin-left: 10px;
+            background: url('../img/sprites/sprites.png') no-repeat -147px -13px;
+        }
+
+        &-hover {
+            background: url('../img/sprites/sprites.png') no-repeat -180px -13px;
+        }
+    }
+
+    .minicart-boxs {
+        position: absolute;
+        top: 41px;
+        right: 4px;
+        z-index: -1;
+        width: 308px;
+        border: 1px solid #e5e5e5;
+        font-size: 12px;
+        background-color: white;
+
+        h2 {
+            height: 34px;
+            line-height: 34px;
+            font-size: 12px;
+            font-weight: normal;
+            text-indent: 1.5em;
+            color: $quiet-font-color;
+            background-color: #f1f1f1;
+        }
+
+        ul {
+            padding: 0px 14px 0px;
+        }
+
+        li {
+            &.no-border {
+                border: none;
+            }
+
+            padding-top: 14px;
+            width: 280px;
+            height: 70px;
+            text-indent: 0em;
+            border-bottom: 1px dashed #f1f1f1;
+        }
+
+        .minicart-img {
+            width: 62px;
+            height: 62px;
+
+            img {
+                width: 62px;
+                height: 62px;
+                border: 0px;
+            }
+        }
+    }
+
+    .minicart-infos {
+        margin-left: 10px;
+        width: 200px;
+
+        .minicart-p {
+            width: 200px;
+            height: 36px;
+            line-height: 18px;
+            color: $basic;
+        }
+
+        .minicart-minor {
+            width: 200px;
+            height: 20px;
+            line-height: 20px;
+
+            span {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .minicart-footer {
+        padding: 10px;
+        background-color: #f1f1f1;
+        text-indent: 0em;
+        overflow: hidden;
+        cursor: pointer;
+
+        p {
+            height: 20px;
+            line-height: 20px;
+            text-align: right;
+            color: $basic;
+
+            span {
+                &.big-font {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                color: $primary-color;
+            }
+        }
+
+        .minicart-account {
+            margin-top: 10px;
+            width: 110px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+}

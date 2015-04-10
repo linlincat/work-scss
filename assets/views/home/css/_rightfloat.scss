@@ -1,0 +1,27 @@
+/**
+ * 首页右上方-悬浮
+ * --------------------------------------------------
+ */
+//@  *html....这样无法编译，所以IE6下，还是自己受到导入进去吧！！
+
+
+//*html,*html body {background-image:url(about:blank);background-attachment:fixed;}
+#rightbar {width:36px;position:fixed;right:25px;bottom:90px;z-index:999;
+_position:absolute;
+_top:expression(eval(documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 +170));}
+#rightbar li {width:36px;height:36px;float:left;margin-bottom:4px;display:inline;}
+#rightbar .barspan {width:36px;height:36px;display:block;background-image:url(../img/icon/rightf.png);background-repeat:no-repeat;}
+
+#rightbar .li_topm .barspan {background-position:0px -229px;}
+#rightbar .li_bjm .barspan {background-position:0px -267px;}
+#rightbar .li_mrm .barspan {background-position:0px -303px;}
+#rightbar .li_ysm .barspan {background-position:0px -375px;}
+#rightbar .li_jjm .barspan {background-position:0px -339px;}
+#rightbar .li_jiajum .barspan {background-position:0px -411px;}
+
+#rightbar .over .barspan {background-position:0px -191px;}
+#rightbar .over .barspan {background-position:0px 0px;}
+#rightbar .over .barspan {background-position:0px -38px;}
+#rightbar .over .barspan {background-position:0px -76px;}
+#rightbar .over .barspan {background-position:0px -114px;}
+#rightbar .over .barspan {background-position:0px -152px;}

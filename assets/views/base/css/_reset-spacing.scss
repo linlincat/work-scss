@@ -1,0 +1,44 @@
+/**
+ * 间距
+ * m, md, mx, m5, m10, m20, m30, m40, m50, m60, m80, m100
+ * t, b, l, r, v, h
+ * top, bottom, left, right, vertical, horizontal
+ * --------------------------------------------------
+ */
+
+$num:0;
+@each $name in m, d, x, '-m', '-d', '-x', 2 {
+    @if $name == m {
+        $name: '';
+        $num: $content-padding;
+    }
+    @else if $name == -m {
+        $name: '-';
+        $num: -$content-padding;
+    }
+    @else if $name == d {
+        $num: $content-padding * 2;
+    }
+    @else if $name == x {
+        $num: $content-padding / 2;
+    }
+    @else if $name == -d {
+        $num: -$content-padding * 2;
+    }
+    @else if $name == -x {
+        $num: -$content-padding / 2;
+    }
+    @else {
+        $num: $name;
+    }
+
+    $num: $num + 0px;
+
+    .m#{$name}  { margin:        $num;                           }
+    .mt#{$name} { margin-top:    $num;                           }
+    .mb#{$name} { margin-bottom: $num;                           }
+    .ml#{$name} { margin-left:   $num;                           }
+    .mr#{$name} { margin-right:  $num;                           }
+    .mv#{$name} { @extend .mt#{$name};  @extend .mb#{$name};     }
+    .mh#{$name} { @extend .ml#{$name};  @extend .mr#{$name};     }
+}

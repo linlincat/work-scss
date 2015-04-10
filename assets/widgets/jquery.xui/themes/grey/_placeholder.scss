@@ -1,0 +1,21 @@
+/*  文本提示文字
+----------------------------------------*/
+.xui-placeholder {
+    position: relative;
+    z-index: 1;
+
+    display: inline-block;
+    label {
+        // font-family: Verdana,Microsoft Yahei;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        left: 0;
+
+        cursor: default;
+
+        opacity: 1 !important;
+        color: #999;
+    }
+}

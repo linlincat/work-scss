@@ -1,0 +1,61 @@
+/**
+ * 头部 - 横向菜单
+ * --------------------------------------------------
+ */
+
+.top-menu {
+    color: $basic;
+    margin-left: 210px;
+    height: 34px;
+
+    ul {
+        width: 75%;
+    }
+
+    li {
+        margin: 0 1%;
+        width: 76px;
+        text-align: center;
+        float: left;
+        font-size: 14px;
+        line-height: 20px;
+
+        a {
+            display: block;
+            color: $basic;
+
+            &.has-bg01 {
+                width: 84px;
+                height: 23px;
+                text-align: center;
+                line-height: 22px;
+                color: $background-color;
+                background: url('../img/sprites/sprites.png') no-repeat 0px -116px;
+            }
+            &.has-bg02 {
+                width: 84px;
+                height: 23px;
+                text-align: center;
+                line-height: 22px;
+                color: $background-color;
+                background: url('../img/sprites/sprites.png') no-repeat 0px -116px;
+            }
+        }
+    }
+
+    .gift {
+        margin-top: -6px;
+        margin-right: 40px;
+        width: 144px;
+        height: 34px;
+        cursor: pointer;
+
+        img {
+            width: 144px;
+            height: 34px;
+            border: 0px;
+        }
+    }
+}
+
+

@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/**
+ * demo-require 示例页面
+ * --------------------------------------------------
+ */
+.list {
+  width: 400px; }
+  .list .thumb {
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+    box-shadow: 10px 10px 5px #555555; }
+    .list .thumb img {
+      width: 400px;
+      transition: all 2s ease-in-out 0; }
+      .list .thumb img:hover {
+        transform: scale(1.5); }
+
+/**
+ * demo-sprite 示例页面
+ * 合并精灵图示例
+ * --------------------------------------------------
+ */
+.icon {
+  display: block;
+  width: 32px;
+  height: 32px; }
+
+.icon-1 {
+  background: url("../img/icon/icon_01.gif?__sprite"); }
+
+.icon-2 {
+  background: url("../img/icon/icon_02.gif?__sprite"); }
+
+.icon-3 {
+  background: url("../img/icon/icon_03.gif?__sprite"); }
+
+.icon-4 {
+  background: url("../img/icon/icon_04.png?__sprite"); }
+
+.icon-5 {
+  background: url("../img/icon/icon_05.png?__sprite"); }
+
+.icon-6 {
+  background: url("../img/icon/icon_06.png?__sprite"); }
+
+.icon-nodejs {
+  width: 220px;
+  height: 65px;
+  background: url("../img/icon/icon_nodejs.png?__sprite"); }
+
+/**
+ * demo-base64 示例页面
+ * 嵌入图片编码
+ * --------------------------------------------------
+ */
+.line {
+  height: 90px;
+  background: url("../img/line.png?__inline"); }
+
+/**
+ * demo-jquery.xui 示例页面
+ * 扩展ui组件
+ * --------------------------------------------------
+ */
+.demo-body {
+  height: 2000px; }
+
+.title {
+  font-weight: bold;
+  margin-top: 30px; }
+
+.masking {
+  z-index: 20001; }
+
+.lock {
+  z-index: 200001; }
+
+.myholder {
+  line-height: 30px;
+  height: 30px;
+  padding: 3px;
+  border: 1px solid #000; }
+
+.mytabs .xui-tabs {
+  height: 25px; }
+  .mytabs .xui-tabs li {
+    float: left;
+    border: 1px solid #000; }
+
+.other-notes {
+  padding: 0 17px; }
+  .other-notes textarea {
+    width: 374px;
+    height: 125px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    resize: none;
+    color: #9b9b9b;
+    border: 1px solid #dfdfdf; }
+  .other-notes .xui-dialog-c-btn {
+    height: 50px; }
+    .other-notes .xui-dialog-c-btn .box {
+      float: right; }
+      .other-notes .xui-dialog-c-btn .box .btn {
+        margin-right: 0;
+        margin-left: 10px; }
+
+/**
+ * demo-jquery.xui 示例页面
+ * 扩展ui组件
+ * --------------------------------------------------
+ */
+body {
+  font-size: 12px;
+  margin: 0;
+  color: #555; }
+
+h2 {
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+  background: #333; }
+
+h3 {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 30px;
+  position: relative;
+  margin: 30px 0 20px;
+  padding: 0 20px;
+  color: #fff;
+  background: #333; }
+
+h3 span {
+  font-size: 12px;
+  line-height: 30px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: #aaa; }
+
+form {
+  margin: 10px 0;
+  padding: 0 20px; }
+
+.button-bar {
+  padding: 0 20px; }
+
+
+
+/*# sourceMappingURL=../../../../map/assets/views/demo/css/demo.css.map */

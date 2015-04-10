@@ -1,0 +1,24 @@
+/**
+ * demo-require 示例页面
+ * --------------------------------------------------
+ */
+
+.list {
+    width: 400px;
+    .thumb {
+        overflow: hidden;
+
+        width: 400px;
+        height: 300px;
+
+        box-shadow: 10px 10px 5px $gray;
+        img {
+            width: 400px;
+
+            transition: all 2s ease-in-out 0;
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+}

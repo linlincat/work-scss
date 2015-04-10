@@ -1,0 +1,64 @@
+/**
+ * 底部 - service
+ * --------------------------------------------------
+ */
+
+.bottom-service {
+    padding: 20px 0 50px 0;
+    border-top: 1px solid #e2e2e2;
+
+    ul {
+        margin-left: 60px;
+        margin-right: 40px;
+    }
+
+    li {
+        width: 100px;
+
+        h2 {
+            margin-bottom: 20px;
+            line-height: 20px;
+        }
+    }
+
+    .address {
+        width: 370px;
+
+        h2 {
+            font-size: 14px;
+            color: #7d7d7d;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: $primary-color;
+        }
+
+        p {
+            line-height: 20px;
+            color: $quiet-font-color;
+        }
+
+        .tel-wrap {
+            margin-top: 10px;
+            margin-left: 26px;
+
+            @at-root .tel {
+                margin-right: 8px;
+                margin-top: 5px;
+                width: 24px;
+                height: 31px;
+                background-image: url('../img/icon/tel.png?__sprite');
+            }
+        }
+    }
+}
+
+.turn-style {
+    .bottom-service {
+        ul {
+            margin-left: 40px;
+            margin-right: 12px;
+        }
+    }
+}

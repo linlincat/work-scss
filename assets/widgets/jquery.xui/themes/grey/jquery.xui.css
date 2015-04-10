@@ -1,0 +1,304 @@
+@charset "UTF-8";
+/* 单选复选框
+--------------------------------*/
+.xui-checkbox,
+.xui-radio {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  *zoom: 1;
+  *display: inline;
+  *top: 0; }
+
+.xui-checkbox input,
+.xui-radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
+
+.xui-checkbox-disabled input,
+.xui-checkbox-disabled-checked input,
+.xui-radio-disabled input,
+.xui-radio-disabled-checked input {
+  cursor: default; }
+
+.xui-checkbox {
+  width: 13px;
+  height: 13px;
+  background: url(img/chk-1.png?__sprite); }
+
+.xui-checkbox-checked {
+  background: url(img/chk-2.png?__sprite); }
+
+.xui-checkbox-disabled {
+  background: url(img/chk-3.png?__sprite); }
+
+.xui-checkbox-disabled-checked {
+  background: url(img/chk-4.png?__sprite); }
+
+.xui-radio {
+  width: 14px;
+  height: 14px;
+  background: url(img/rdo-1.png?__sprite); }
+
+.xui-radio-checked {
+  background: url(img/rdo-2.png?__sprite); }
+
+.xui-radio-disabled {
+  background: url(img/rdo-3.png?__sprite); }
+
+.xui-radio-disabled-checked {
+  background: url(img/rdo-4.png?__sprite); }
+
+/* 单选复选框
+--------------------------------*/
+.xui-select {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  width: 120px;
+  height: 24px;
+  position: relative;
+  top: -2px;
+  *top: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  line-height: 24px;
+  vertical-align: middle;
+  cursor: pointer; }
+
+.xui-select-disabled {
+  background: #f0f0f0;
+  color: #aaa;
+  cursor: default; }
+
+.xui-select select {
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden; }
+
+.xui-select-head {
+  padding: 0 24px 0 7px; }
+
+.xui-select-text {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.xui-select-tr {
+  display: block;
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  margin-top: -2px;
+  background: url(img/select-arrow.png?__sprite); }
+
+.xui-select-option-list-box {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  position: absolute;
+  left: -1px;
+  top: 25px;
+  z-index: 999;
+  border: 1px solid #ddd;
+  border-top: 0;
+  overflow: auto;
+  overflow-x: hidden; }
+
+.xui-select-option-list-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border: 0;
+  width: 100%;
+  height: 100%; }
+
+.xui-select-option-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.xui-select-option-list li {
+  zoom: 1; }
+
+.xui-select-option {
+  display: block;
+  padding: 0 7px;
+  color: #555;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  _zoom: 1; }
+
+.xui-select-option-selected,
+.xui-select-option:hover {
+  background: #ddd; }
+
+.xui-select-option span {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+/* 屏幕锁
+--------------------------------*/
+.xui-lock {
+  font-size: 12px;
+  position: fixed;
+  z-index: 99999;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 18px;
+  margin-top: -9px;
+  margin-left: -9px;
+  padding-left: 22px;
+  background: url(../../../../img/wait.gif) left center no-repeat;
+  _position: absolute;
+  /*IE6*/
+  _top: expression(eval(documentElement.scrollTop + (document.documentElement.clientHeight)/2)); }
+
+/* 模态定位窗口外壳
+--------------------------------*/
+.xui-dialog {
+  font-size: 12px;
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  width: 420px;
+  margin-top: -120px;
+  margin-left: -210px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: transparent;
+  _position: absolute;
+  /*IE6*/
+  _top: expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop + (document.documentElement.clientHeight)/2 : document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2); }
+
+.xui-dialog-t {
+  font-size: 14px;
+  line-height: 40px;
+  position: relative;
+  height: 40px;
+  border-bottom: 1px solid #dfdfdf;
+  background: #fff; }
+  .xui-dialog-t span {
+    padding-left: 18px;
+    color: #5f5f5f; }
+  .xui-dialog-t s {
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background: url(img/close.png?__sprite); }
+
+/* 对话框内容及按钮
+--------------------------------*/
+.xui-dialog-c {
+  margin: 0;
+  border-top: none;
+  background: #fff; }
+
+.xui-dialog-c-tip {
+  width: 300px;
+  margin: 0 auto; }
+  .xui-dialog-c-tip p {
+    margin: 0; }
+  .xui-dialog-c-tip .msg {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-top: 22px;
+    color: #fe8b00; }
+    .xui-dialog-c-tip .msg .icon, .xui-dialog-c-tip .msg .info, .xui-dialog-c-tip .msg .error {
+      float: left;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px; }
+    .xui-dialog-c-tip .msg .info {
+      background: url(img/info.png?__sprite); }
+    .xui-dialog-c-tip .msg .error {
+      background: yellow; }
+  .xui-dialog-c-tip .msg-des {
+    margin-top: 3px;
+    margin-bottom: 12px;
+    padding-left: 40px;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: #9a9a9a; }
+
+.xui-dialog-c-btn {
+  height: 66px;
+  padding-left: 100px; }
+  .xui-dialog-c-btn .box {
+    float: left; }
+    .xui-dialog-c-btn .box .btn, .xui-dialog-c-btn .box .confirm, .xui-dialog-c-btn .box .cancel {
+      font-size: 12px;
+      float: right;
+      margin-right: 10px;
+      padding: 4px 20px;
+      cursor: pointer; }
+    .xui-dialog-c-btn .box .confirm {
+      color: #fff;
+      border: 1px solid #2888ff;
+      background: #2888ff; }
+    .xui-dialog-c-btn .box .cancel {
+      color: #5f5f5f;
+      border: 1px solid #dbdbdb;
+      background-color: #f4f4f4; }
+
+/*  公共页签切换
+----------------------------------------*/
+.xui-tab-content .active {
+  display: block; }
+
+.xui-tab-pane {
+  display: none; }
+
+/*  文本提示文字
+----------------------------------------*/
+.xui-placeholder {
+  position: relative;
+  z-index: 1;
+  display: inline-block; }
+  .xui-placeholder label {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    left: 0;
+    cursor: default;
+    opacity: 1 !important;
+    color: #999; }
+
+
+
+/*# sourceMappingURL=../../../../../map/assets/widgets/jquery.xui/themes/grey/jquery.xui.css.map */

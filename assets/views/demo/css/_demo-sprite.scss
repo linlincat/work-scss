@@ -1,0 +1,35 @@
+/**
+ * demo-sprite 示例页面
+ * 合并精灵图示例
+ * --------------------------------------------------
+ */
+.icon {
+    display: block;
+
+    width: 32px;
+    height: 32px;
+}
+.icon-1 {
+    background: url('../img/icon/icon_01.gif?__sprite');
+}
+.icon-2 {
+    background: url('../img/icon/icon_02.gif?__sprite');
+}
+.icon-3 {
+    background: url('../img/icon/icon_03.gif?__sprite');
+}
+.icon-4 {
+    background: url('../img/icon/icon_04.png?__sprite');
+}
+.icon-5 {
+    background: url('../img/icon/icon_05.png?__sprite');
+}
+.icon-6 {
+    background: url('../img/icon/icon_06.png?__sprite');
+}
+.icon-nodejs {
+    width: 220px;
+    height: 65px;
+
+    background: url('../img/icon/icon_nodejs.png?__sprite');
+}

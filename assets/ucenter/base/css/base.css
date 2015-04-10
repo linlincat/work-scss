@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/**
+ * 会员中心 - 左侧列表公共部分
+ * --------------------------------------------------
+ */
+.festival .width {
+  margin: 0 auto;
+  width: 990px; }
+.festival .base-userLeft {
+  position: relative;
+  width: 210px;
+  z-index: 10; }
+
+.aa {
+  text-indent: 2em; }
+
+
+
+/*# sourceMappingURL=../../../../map/assets/ucenter/base/css/base.css.map */

@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>健康档案</title>
+    <link rel="stylesheet" type="text/css" href="../../views/base/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../base/css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/health.css">
+    <link rel="stylesheet" type="text/css" href="../../widgets/jquery.date.input/themes/default/jquery.date.input.css">
+
+    <script type="text/javascript" src="../../../lib/jquery/jquery-1.11.0.js"></script>
+<!-- <script type="text/javascript" src="../../widgets/jquery.date.input/jquery.date.input.js"></script> -->
+    <script type="text/javascript" src="../../../lib/jquery.cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../../../lib/avalon/avalon.shim.js"></script>
+    <script type="text/javascript" src="../../../lib/requirejs/require.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+
+
+</head>
+<body class="festival">
+    <div class="health width">
+        <!--
+
+
+        @@@@@@@ 这里暂时不用做，直接在项目上改！
+        @@@@@@@ 这里暂时不用做，直接在项目上改！
+        @@@@@@@ 这里暂时不用做，直接在项目上改！
+        @@@@@@@ 这里暂时不用做，直接在项目上改！
+
+
+
+        <div class="base-userLeft fl">
+            <h1>
+                <i></i><span>我的珍奥</span>
+            </h1>
+            <h2><i></i><span>交易中心</span></h2>
+            <ul>
+                <li><span>我的订单</span><i></i></li>
+                <li><span>我的收藏</span><i></i></li>
+                <li><span>我的评论</span><i></i></li>
+            </ul>
+            <h2><i></i><span>我的资产</span></h2>
+            <ul>
+                <li><span>折扣卷</span><i></i></li>
+                <li><span>我的积分</span><i></i></li>
+            </ul>
+            <h2><i></i><span>客户服务</span></h2>
+            <ul>
+                <li><span>退换货</span><i></i></li>
+                <li><span>在线投诉</span><i></i></li>
+            </ul>
+            <h2><i></i><span>会员中心</span></h2>
+            <ul>
+                <li><span>健康档案</span><i></i></li>
+                <li><span>个人资料</span><i></i></li>
+                <li><span>我的评论</span><i></i></li>
+                <li><span>我的评论</span><i></i></li>
+            </ul>
+        </div> -->
+        <div class="main-health fr">
+            <h2 class="title-top">健康档案</h2>
+            <div class="J-health-add1 health-add clearfix">
+                <span class="fl">家庭成员</span> <span class="J-join fl join">+ 添加成员</span>
+            </div>
+            <div class="J-user-infos user-infos hide">
+                <div class="user-line">
+                    <div class="fl line-01"><b>*</b><span>姓名:</span></div>
+                    <div class="fl line-02"><input type="text" /></div>
+                    <div class="fl line-03">请您填写姓名</div>
+                </div>
+                <div class="user-line">
+                    <div class="fl line-01"><b>*</b><span>和您的关系:</span></div>
+                    <div class="fl line-02"><input type="text" /></div>
+                    <div class="fl line-03">请您填写关系</div>
+                </div>
+                <div class="user-line">
+                    <div class="fl line-01"><b>*</b><span>联系电话:</span></div>
+                    <div class="fl line-02"><input type="text" /></div>
+                    <div class="fl line-03">电话号码格式不正确</div>
+                </div>
+                <div class="user-btn clearfix">
+                    <b class="J-add fl">添加</b><b class="J-cancel b1 fl">取消</b>
+                </div>
+            </div>
+
+            <div class="user-family-bg user-family clearfix">
+                <div class="box01 fl">姓名</div>
+                <div class="box02 fl">和您的关系</div>
+                <div class="box03 fl">联系电话</div>
+                <div class="box04 fl">操作</div>
+            </div>
+
+            <div class="user-family-border user-family clearfix">
+                <div class="box01 fl">永新</div>
+                <div class="box02 fl">妻子</div>
+                <div class="box03 fl">12365478965</div>
+                <div class="J-wrap box04 fl">
+                    <div class="y-ture hide">
+                        <div class="y-true-inner">
+                            <p>您确定要删除吗？</p>
+                            <span class="J-btn-true fl btn-true">确定</span>
+                            <span class="J-btn-cancel fl btn-cancel">取消</span>
+                        </div>
+                    </div>
+                    <a class="J-edit0" href="#">编辑</a><a class="J-del" href="#">删除</a>
+                </div>
+            </div>
+            <div class="user-family-border user-family clearfix">
+                <div class="box01 fl">永新</div>
+                <div class="box02 fl">妻子</div>
+                <div class="box03 fl">12365478965</div>
+                <div class="J-wrap box04 fl">
+                    <div class="y-ture hide">
+                        <div class="y-true-inner">
+                            <p>您确定要删除吗？</p>
+                            <span class="J-btn-true fl btn-true">确定</span>
+                            <span class="J-btn-cancel fl btn-cancel">取消</span>
+                        </div>
+                    </div>
+                    <a class="J-edit0" href="#">编辑</a><a class="J-del" href="#">删除</a>
+                </div>
+            </div>
+
+            <div class="J-health-add2 health-add clearfix">
+                <span class="fl">就诊历史</span> <span class="J-joins fl joins">+ 添加就诊历史</span>
+            </div>
+
+            <div class="J-user-info user-infos hide">
+                <div class="user-line">
+                    <div class="fl line-01"><b>*</b><span>姓名:</span></div>
+                    <div class="fl line-02"><input type="text" /></div>
+                    <div class="fl line-03">请您填写姓名</div>
+                </div>
+                <div class="user-line">
+                    <div class="fl line-01"><b>*</b><span>和您的关系:</span></div>
+                    <div class="fl line-02"><input type="text" /></div>
+                    <div class="fl line-03">请您填写关系</div>
+                </div>
+                <div class="user-line">
+                    <div class="fl line-01"><b>*</b><span>联系电话:</span></div>
+                    <div class="fl line-02"><input type="text" /></div>
+                    <div class="fl line-03">电话号码格式不正确</div>
+                </div>
+                <div class="user-line">
+                    <div class="fl line-01"><b>*</b><span>就诊时间:</span></div>
+                    <div class="fl line-02">
+                        <input class="tui-text date-input-default j-date-input" value=" " />
+                    </div>
+                </div>
+                <div class="user-line hidden">
+                    <div class="fl line-01"><b>*</b><span>就诊时间:</span></div>
+                    <div class="fileInputContainer fl">
+                        <input class="fileInput" type="file" multiple="multiple" name="" id="" />
+                    </div>
+                    <i class="i-icon fl"></i>
+                    <p class="p-load fl">正在上传图片，请稍等...</p>
+                </div>
+                <p class="pic-describe">最多可上传6张图片，每张图片大小不超过2M，支持bmp,gif,jpg,png格式文件</p>
+                <div class="pic-list hidden">
+                    <div class="pic-list-edit">
+                        <img src="img/pic.jpg" alt="" />
+                        <span>删除</span>
+                    </div>
+                    <div class="pic-list-edit">
+                        <img src="img/pic.jpg" alt="" />
+                        <span>删除</span>
+                    </div>
+                </div>
+                <div class="user-btn clearfix">
+                    <b class="J-adds fl">添加</b><b class="J-cancels b1 fl">取消</b>
+                </div>
+            </div>
+
+            <div class="user-history clearfix">
+                <div class="user-history-bg clearfix">
+                    <div class="box01 div fl">病症名称</div>
+                    <div class="box02 div fl">医院</div>
+                    <div class="box03 div fl">科室</div>
+                    <div class="box04 div fl">就诊时间</div>
+                    <div class="box05 div fl">操作</div>
+                </div>
+
+                <div class="border-bottom">
+                    <div class="box01 div fl">永新</div>
+                    <div class="box02 div fl">妻子</div>
+                    <div class="box03 div fl">12365478965</div>
+                    <div class="box04 div fl">22</div>
+                    <div class="J-wrap box05 div fl">
+                        <div class="y-ture hide">
+                            <div class="y-true-inner">
+                                <p>您确定要删除吗？</p>
+                                <span class="J-btn-true fl btn-true">确定</span>
+                                <span class="J-btn-cancel fl btn-cancel">取消</span>
+                            </div>
+                        </div>
+                        <a class="J-edit1" href="#">编辑</a><a class="J-del" href="#">删除</a>
+                    </div>
+                    <div class="fl pic-list">
+                        <a href="/resource/assets/ucenter/health/img-target.html#" target="_Blank"><img src="img/pic.jpg" /></a>
+                        <a href="/resource/assets/ucenter/health/img-target.html#" target="_Blank"><img src="img/pic.jpg" /></a>
+                        <a href="/resource/assets/ucenter/health/img-target.html#" target="_Blank"><img src="img/pic.jpg" /></a>
+                        <a href="/resource/assets/ucenter/health/img-target.html#" target="_Blank"><img src="img/pic.jpg" /></a>
+                        <a href="/resource/assets/ucenter/health/img-target.html#" target="_Blank"><img src="img/pic.jpg" /></a>
+                    </div>
+                </div>
+                <div class="border-bottom">
+                    <div class="box01 div fl">永新</div>
+                    <div class="box02 div fl">妻子</div>
+                    <div class="box03 div fl">12365478965</div>
+                    <div class="box04 div fl">22</div>
+                    <div class="J-wrap box05 div fl">
+                        <div class="y-ture hide">
+                            <div class="y-true-inner">
+                                <p>您确定要删除吗？</p>
+                                <span class="J-btn-true fl btn-true">确定</span>
+                                <span class="J-btn-cancel fl btn-cancel">取消</span>
+                            </div>
+                        </div>
+                        <a class="J-edit1" href="#">编辑</a><a class="J-del" href="#">删除</a>
+                    </div>
+                    <div class="fl pic-list">
+                        <a href="/resource/assets/ucenter/health/img-target.html#" target="_Blank"><img src="img/pic.jpg" /></a>
+                        <a href="/resource/assets/ucenter/health/img-target.html#" target="_Blank"><img src="img/pic.jpg" /></a>
+                        <a href="/resource/assets/ucenter/health/img-target.html#" target="_Blank"><img src="img/pic.jpg" /></a>
+                    </div>
+                </div>
+
+                <div class="border-bottom">
+                    <div class="box01 div fl">永新</div>
+                    <div class="box02 div fl">妻子</div>
+                    <div class="box03 div fl">12365478965</div>
+                    <div class="box04 div fl">22</div>
+                    <div class="J-wrap box05 div fl">
+                        <div class="y-ture hide">
+                            <div class="y-true-inner">
+                                <p>您确定要删除吗？</p>
+                                <span class="J-btn-true fl btn-true">确定</span>
+                                <span class="J-btn-cancel fl btn-cancel">取消</span>
+                            </div>
+                        </div>
+                        <a class="J-edit1" href="#">编辑</a><a class="J-del" href="#">删除</a>
+                    </div>
+                    <div class="fl pic-list">
+                        <a href="/resource/assets/ucenter/health/img-target.html#" target="_Blank"><img src="img/pic.jpg" /></a>
+                        <a href="/resource/assets/ucenter/health/img-target.html#" target="_Blank"><img src="img/pic.jpg" /></a>
+                        <a href="/resource/assets/ucenter/health/img-target.html#" target="_Blank"><img src="img/pic.jpg" /></a>
+                        <a href="/resource/assets/ucenter/health/img-target.html#" target="_Blank"><img src="img/pic.jpg" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/health.js"></script>
+
+<script type="text/javascript">
+(function () {
+    require([ 'jquery.date.input' ], function () {
+        $($.date_input.initialize);
+    });
+}());
+</script>
+

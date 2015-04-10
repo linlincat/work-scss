@@ -1,0 +1,10 @@
+/**
+ * 加载中样式
+ * --------------------------------------------------
+ */
+
+.lazyload,
+.loading {
+    display: block;
+    background: url(../../../img/wait.gif) 50% 50% no-repeat;
+}

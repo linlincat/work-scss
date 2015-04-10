@@ -1,0 +1,74 @@
+/**
+ * 头部 - 收藏及登入注册
+ * --------------------------------------------------
+ */
+.site-nav {
+    position: relative;
+    height: 24px;
+    border-bottom: 1px solid #ededed;
+    line-height: 24px;
+    background-color: #f6f6f6;
+    z-index: 1100;
+
+    color: $quiet-font-color;
+
+    img {
+        border: 0px;
+    }
+
+    .collect {
+        width: 16px;
+        height: 16px;
+        display: block;
+        margin: 4px 4px 0 2px;
+        background-image: url('../img/icon/star.png?__sprite');
+    }
+
+    .site-right {
+        padding-right: 10px;
+    }
+
+    .line {
+        margin: 4px 6px 0;
+        height:16px;
+        border-left: 1px solid #cbcbcb;
+    }
+
+    .my-order {
+        margin: 0 20px;
+    }
+
+    .top-site-center {
+        position: relative;
+        cursor: pointer;
+
+        p {
+            padding-right: 12px;
+            color: $quiet-font-color;
+        }
+        i {
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 4px;
+            width: 7px;
+            height: 4px;
+            background-image: url('../img/icon/down.png?__sprite');
+        }
+
+        .center-list {
+            position: absolute;
+            overflow: hidden;
+            top: 24px;
+            left: -8px;
+            width: 76px;
+            border: 1px solid #ededed;
+            background-color: white;
+
+            li {
+                padding-left: 6px;
+                line-height: 24px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>jquery.scrollbox</title>
+    <link rel="stylesheet" type="text/css" href="/resource/assets/views/base/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/resource/assets/views/demo/css/demo.css">
+    <style>
+        .row {
+            width: 50%;
+        }
+        .scroll-wrap {
+            margin-bottom: 20px;
+
+            border: 1px solid #ddd;
+        }
+        .scroll-target {
+            overflow: hidden;
+
+            height: 200px;
+            _width: 240px;
+            padding: 1em;
+        }
+        textarea.scroll-target {
+            border: 0;
+            outline: 0;
+        }
+    </style>
+    <script type="text/javascript" src="/resource/lib/jquery/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="/resource/lib/jquery.cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/resource/lib/avalon/avalon.shim.js"></script>
+    <script type="text/javascript" src="/resource/lib/requirejs/require.js"></script>
+    <script type="text/javascript" src="/resource/assets/js/main.js"></script>
+</head>
+<body>
+    <div class="row">
+        <h3>scrollBox组件<br/><span>jquery.scrollbox.js</span></h3>
+        <p class="demo-doc">
+            自定义滚动条插件，支持水平及垂直滚动条，支持多行文本框。
+            data-horizontal="false"若设置属性为false则没有横向滚动条
+        </p>
+
+        <h3>1,基本功能</h3>
+
+        <div class="scroll-wrap">
+            <div id="scrollTarget1" class="scroll-target" data-horizontal="true">
+                <p style="width: 1000px; background: #f0f0f0; padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</p>
+            </div>
+        </div>
+
+        <div class="scroll-wrap">
+            <textarea id="scrollTarget2" class="scroll-target">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus, at posuere neque. Sed pharetra nibh eget orci convallis at posuere leo convallis. Sed blandit augue vitae augue scelerisque bibendum. Vivamus sit amet libero turpis, non venenatis urna. In blandit, odio convallis suscipit venenatis, ante ipsum cursus augue.</textarea>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/resource/assets/views/demo/js/demo-jquery.scrollbox.js"></script>
+</body>
+</html>

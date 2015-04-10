@@ -1,0 +1,93 @@
+/**
+ * 头部 - 左侧分类导航
+ * --------------------------------------------------
+ */
+
+.top-nav {
+    position: relative;
+    height: 34px;
+    z-index: 1000;
+
+    .top-navs {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 210px;
+        height: 34px;
+        line-height: 34px;
+        color: $background-color;
+        background-color: $primary-color;
+        cursor: pointer;
+
+        h2 {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
+    .top-navs-list {
+        position: absolute;
+        top: 34px;
+        left: 0px;
+        padding: 0px 15px;
+        width: 180px;
+        height: 480px;
+        color: $background-color;
+        background-color: $primary-color;
+    }
+
+    .nav-list-line {
+        padding: 14px 0px;
+        width: 180px;
+        overflow: hidden;
+    }
+
+    .nav-line-title {
+        width: 180px;
+        height: 26px;
+
+        a {
+            color: white;
+        }
+
+        .nav-line-i1 {
+            width: 18px;
+            height: 18px;
+            background-image: url('../img/icon/shipin.png?__sprite');
+        }
+        .nav-line-i2 {
+            width: 18px;
+            height: 18px;
+            background-image: url('../img/icon/meirong.png?__sprite');
+        }
+        .nav-line-i3 {
+            width: 18px;
+            height: 18px;
+            background-image: url('../img/icon/yangsheng.png?__sprite');
+        }
+        .nav-line-i4 {
+            width: 18px;
+            height: 18px;
+            background-image: url('../img/icon/baojian.png?__sprite');
+        }
+        .nav-line-i5 {
+            width: 18px;
+            height: 18px;
+            background-image: url('../img/icon/jiaju.png?__sprite');
+        }
+    }
+
+    .nav-line-info {
+        padding-left: 18px;
+        padding-bottom: 4px;
+        width: 162px;
+        line-height: 20px;
+        overflow: hidden;
+
+        a {
+            margin-right: 10px;
+            float: left;
+            color: $background-color;
+        }
+    }
+}

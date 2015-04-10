@@ -1,0 +1,138 @@
+/* Some resets for compatibility with existing CSS */
+.date_selector, .date_selector * {
+  width: auto;
+  height: auto;
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none; }
+
+.date_selector {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: -1px 0 0 0;
+  position: absolute;
+  z-index: 100000;
+  display: none; }
+
+.date_selector_ieframe {
+  position: absolute;
+  z-index: 99999;
+  display: none; }
+
+.date_selector .nav {
+  width: 17.5em;
+  height: 24px;
+  background-color: #fff;
+  margin-bottom: 4px; }
+
+.date_selector .month_nav, .date_selector .year_nav {
+  margin: 0 0 3px 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  text-align: center; }
+
+.date_selector .month_nav {
+  float: left;
+  width: 50%; }
+
+.date_selector .year_nav {
+  float: right;
+  width: 50%;
+  margin-right: -8px; }
+
+.date_selector .month_name, .date_selector .year_name {
+  font-weight: bold;
+  line-height: 20px;
+  color: #333;
+  margin-left: -20px; }
+
+.date_selector .year_name {
+  margin-left: -8px; }
+
+.date_selector .button {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  line-height: 17px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  font-size: 120%;
+  overflow: hidden; }
+
+.date_selector .button:hover, .date_selector .button.hover {
+  background: none;
+  color: #333;
+  cursor: pointer;
+  border-color: #ccc; }
+
+.date_selector .prev {
+  left: 0; }
+
+.date_selector .next {
+  right: 23px; }
+
+.date_selector .year_nav .next {
+  right: 12px; }
+
+.date_selector .year_nav .prev {
+  left: 7px; }
+
+.date_selector table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  clear: both; }
+
+.date_selector thead tr th {
+  background-color: #000; }
+
+.date_selector th, .date_selector td {
+  width: 2.5em;
+  height: 2em;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  font-weight: normal; }
+
+.date_selector td {
+  line-height: 2em;
+  text-align: center;
+  white-space: nowrap;
+  color: #000;
+  background: white; }
+
+.date_selector td.today {
+  background: #FFFEB3; }
+
+.date_selector td.unselected_month {
+  color: #ccc; }
+
+.date_selector td.selectable_day {
+  cursor: pointer; }
+
+.date_selector td.selected {
+  background: #ccc;
+  font-weight: bold;
+  color: #fff; }
+
+.date_selector td.selectable_day:hover, .date_selector td.selectable_day.hover {
+  background: #ccc;
+  color: #000; }
+
+.date-input-default {
+  background: url("time.png?__sprite") 0 0 no-repeat;
+  border: medium none;
+  height: 18px;
+  padding: 6px 0 0 6px;
+  width: 184px; }
+
+
+
+/*# sourceMappingURL=../../../../../map/assets/widgets/jquery.date.input/themes/default/jquery.date.input.css.map */

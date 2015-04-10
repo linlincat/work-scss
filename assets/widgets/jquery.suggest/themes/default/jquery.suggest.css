@@ -1,0 +1,47 @@
+.ac_results {
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  z-index: 10000;
+  display: none; }
+
+.ac_results li {
+  padding: 2px 5px;
+  white-space: nowrap;
+  color: #101010;
+  text-align: left; }
+
+.ac_over {
+  background-color: #000;
+  color: fff;
+  border: 0px; }
+
+.ac_match {
+  text-decoration: underline;
+  color: black; }
+
+.ac_word {
+  width: 50%;
+  padding: 0;
+  padding: 6px;
+  margin: 0;
+  text-align: left;
+  color: #999; }
+
+.ac_desc {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  color: #10cf10;
+  text-align: right;
+  font-size: 10px; }
+
+.ac_over .ac_word {
+  color: #fff; }
+
+
+
+/*# sourceMappingURL=../../../../../map/assets/widgets/jquery.suggest/themes/default/jquery.suggest.css.map */

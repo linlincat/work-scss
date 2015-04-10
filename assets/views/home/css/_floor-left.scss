@@ -1,0 +1,89 @@
+/**
+ * floor-left  首页楼层-左侧
+ * --------------------------------------------------
+ */
+
+.home-floor {
+    //position: relative;
+    padding-bottom: 32px;
+
+    %floor-left {
+        position: relative;
+        width: 210px;
+        height: 432px;
+    }
+
+    .floor-left {
+        @extend %floor-left;
+
+        i {
+            margin-left: 26px;
+            margin-top: 5px;
+        }
+
+        .ad-img {
+            position: absolute;
+            top: 160px;
+            left: -31px;
+        }
+
+        .a-anchor {
+            height: 26px;
+            line-height: 26px;
+
+            a {
+                margin-left: 32px;
+                font-size: 14px;
+                color: white;
+                font-family: "Microsoft YaHei";
+            }
+        }
+
+        .floor-font {
+            font-size: 20px;
+            color: white;
+        }
+        .font-left {
+            margin-top: 8px;
+            margin-left: 6px;
+        }
+        .font-right {
+            margin-left: 4px;
+            margin-top: 10px;
+        }
+    }
+    .home-floor01 {
+        width: 210px;
+        height: 100px;
+        background-color: #3cb38d;
+    }
+
+    $animal-data: (floor01, 210, 100, #3cb38d),(floor02, 210, 100, #883966),(floor03, 210, 100, #ff649d),(floor04, 210, 100, #db6b15),(floor05, 210, 100, #155970);
+    @each $name, $width, $height, $color in $animal-data {
+      .#{$name}-bgc {
+        width: $width + px;
+        height: $height + px;
+        background-color: $color;
+      }
+    }
+
+    $animal-list: bjsp, mrmf, jbfz, yybc, bjjj;
+    @each $animal in $animal-list {
+      .#{$animal}-icon {
+        float: left;
+        width: 27px;
+        height: 27px;
+        background-image: url('../img/icon/#{$animal}.png?__sprite');
+      }
+    }
+
+    $animal-list: floor_01, floor_02, floor_03, floor_04, floor_05;
+    @each $animal in $animal-list {
+      .#{$animal}-icon {
+        width: 210px;
+        height: 60px;
+        background-image: url('../img/floor/#{$animal}.jpg?__sprite');
+      }
+    }
+}
+

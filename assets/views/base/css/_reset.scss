@@ -1,0 +1,154 @@
+/**
+ * reset html tag
+ * --------------------------------------------------
+ */
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+em,
+font,
+img,
+small,
+strong,
+b,
+u,
+i,
+s,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 12px/150% Verdana,Arial,SimSun,Microsoft Yahei;
+
+    color: #1e1e1e;
+    background-color: #fff;
+}
+ol,
+ul,
+li {
+    list-style: none outside none;
+}
+img {
+    border: 0;
+}
+input,
+a,
+select {
+    outline: 0;
+}
+a {
+    text-decoration: none;
+
+    color: #9e9e9e;
+}
+a:link {
+    color: #9e9e9e;
+}
+a:visited {
+    color: #9e9e9e;
+}
+a:hover {
+    color: #e31522;
+    text-decoration: underline;
+}
+a:active {
+    color: #9e9e9e;
+}
+
+/* clear float
+-------------------------------------------------- */
+.clear {
+    font-size: 0;
+
+    clear: both;
+    overflow: hidden;
+
+    height: 0;
+}
+.clearfix:after {
+    display: block;
+    clear: both;
+
+    height: 0;
+
+    content: '\0020';
+}
+.clearfix {
+    zoom: 1;
+}
+
+/* viewport
+-------------------------------------------------- */
+.slimscreen {
+    width: 990px;
+    margin: 0 auto;
+}
+.narrowscreen {
+    width: 1210px;
+    margin: 0 auto;
+}
+.fullscreen {
+    width: 100%;
+}
+
+/* single attribute >> atom css
+-------------------------------------------------- */
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.rel {
+    position: relative;
+}
+.abs {
+    position: absolute;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.hidden {
+    overflow: hidden;
+}
+.pointer {
+    cursor: pointer;
+};
+.ellipsis {
+    text-overflow: ellipsis;
+}
+
+
+.turn-style .widths {
+    width: 990px;
+    margin: 0 auto;
+}

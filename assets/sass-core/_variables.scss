@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+////
+/// Variables
+/// Think of variables as a way to store information that you want to reuse
+/// throughout your stylesheet. You can store things like colors, font stacks,
+/// or any CSS value you think you'll want to reuse.
+/// Sass uses the $ symbol to make something a variable.
+///
+/// @group API
+/// @author co-mall
+////
+
+/// 基础文字色调
+$basic:                         #000                       !default;
+/// 深灰色
+$gray-darker:                   lighten($basic, 13.5%)     !default;   // #222
+/// 暗灰色
+$gray-dark:                     lighten($basic, 20%)       !default;   // #333
+/// 灰色
+$gray:                          lighten($basic, 33.5%)     !default;   // #555
+/// 淡灰色
+$gray-light:                    lighten($basic, 60%)       !default;   // #999
+/// 浅灰色
+$gray-lighter:                  lighten($basic, 93.5%)     !default;   // #eee
+
+/// 主色
+$primary-color:                 #ed1b24                    !default;
+
+/// 背景色
+$background-color:              #fff                       !default;
+
+/// 文本颜色
+$font-color:                    $gray-dark                 !default;
+
+/// 次要文本颜色
+$quiet-font-color:              #9e9e9e                    !default;
+
+/// 强调文本颜色
+$loud-font-color:               $gray-dark                 !default;
+
+/// 链接颜色
+$link-color:                    $quiet-font-color             !default;
+$link-focus-color:              darken($link-color, 15%)   !default;
+$link-visited-color:            $link-color                !default;
+
+/// 分割线边框颜色
+$hr-border-color:               $gray-lighter              !default;
+
+/// 成功
+$success:                       #5cb85c !default;
+/// 消息
+$info:                          #5bc0de !default;
+/// 警告
+$warning:                       #f0ad4e !default;
+/// 错误
+$danger:                        #d9534f !default;
+
+/// 成功状态配色
+$success-text:                  #468847 !default;
+$success-bg:                    #dff0d8 !default;
+$success-border:                darken(adjust-hue($success-bg, -10), 5%) !default;
+
+/// 消息状态配色
+$info-text:                     #3a87ad !default;
+$info-bg:                       #d9edf7 !default;
+$info-border:                   darken(adjust-hue($info-bg, -10), 5%) !default;
+
+/// 警告状态配色
+$warning-text:                  #c09853 !default;
+$warning-bg:                    #fcf8e3 !default;
+$warning-border:                darken(adjust-hue($warning-bg, -10), 5%) !default;
+
+/// 错误状态配色
+$danger-text:                   #b94a48 !default;
+$danger-bg:                     #f2dede !default;
+$danger-border:                 darken(adjust-hue($danger-bg, -10), 5%) !default;
+
+/// 间距，空隙
+$content-padding:               10px;

@@ -1,0 +1,33 @@
+/**
+ * 头部 - 顶部广告
+ * --------------------------------------------------
+ */
+
+.top-ad {
+    position: relative;
+    height: 146px;
+
+    img {
+        width: 1210px;
+        height: 146px;
+        border: 0px;
+    }
+
+    .ad-btn {
+        position: absolute;
+        right: 4px;
+        bottom: 0px;
+        display: block;
+        width: 80px;
+        height: 20px;
+    }
+}
+
+
+.turn-style {
+    .top-ad {
+        img {
+            width: 990px;
+        }
+    }
+}

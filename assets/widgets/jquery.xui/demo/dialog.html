@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dialog</title>
+    <link rel="stylesheet" href="../themes/grey/jquery.xui.css">
+</head>
+<body>
+    <dl class="xui-dialog xui-dialog" id="xui-dialog{{zindex}}" data-zindex="{{zindex}}" style="display: none">
+        <dt class="xui-dialog-t"><span>{{title}}</span><s id="xui-dialog-close{{zindex}}" data-zindex="{{zindex}}"></s></dt>
+        <dd class="xui-dialog-c">
+            <div class="xui-dialog-c-tip" id="xui-dialog-c-tip{{zindex}}">
+                <p class="msg">
+                    <s class="info"></s>{{msg}提示信息内容
+                </p>
+                <p class="msg-des">补充说明</p>
+            </div>
+            <div class="xui-dialog-c-btn">
+                <div class="box">
+                    <span class="confirm" id="xui-dialog-confirm{{zindex}}" data-zindex="{{zindex}}">{{confirm}}</span>
+                    <span class="cancel" id="xui-dialog-cancel{{zindex}}" data-zindex="{{zindex}}">{{cancel}}</span>
+                </div>
+            </div>
+        </dd>
+    </dl>
+
+    <dl class="xui-dialog xui-dialog" id="xui-dialog{{zindex}}" data-zindex="{{zindex}}" style="display: none">
+        <dt class="xui-dialog-t"><span>{{title}}</span><s id="xui-dialog-close{{zindex}}" data-zindex="{{zindex}}"></s></dt>
+        <dd class="xui-dialog-c">
+
+            <!-- 需要提取的 备注 样式 -->
+            <div class="other-notes">
+                <textarea name="" id="" cols="30" rows="10" placeholder="请填写备注，1-500字以内"></textarea>
+                <div class="xui-dialog-c-btn">
+                    <div class="box">
+                        <span class="confirm" id="">确定</span>
+                        <span class="cancel" id="">取消</span>
+                    </div>
+                </div>
+            </div>
+
+        </dd>
+    </dl>
+
+
+    <dl class="xui-dialog xui-dialog" id="xui-dialog{{zindex}}" data-zindex="{{zindex}}">
+        <dt class="xui-dialog-t"><span>修改密码</span><s id="xui-dialog-close{{zindex}}" data-zindex="{{zindex}}"></s></dt>
+        <dd class="xui-dialog-c">
+
+            <!-- 需要提取的 修改密码 样式 -->
+            <div class="modify-pwd">
+                <dl>
+                    <dt>原密码</dt>
+                    <dd><input type="password" placeholder="请输入原始密码"></dd>
+                </dl>
+                <dl>
+                    <dt>新密码</dt>
+                    <dd><input type="password" placeholder="请输入新密码"></dd>
+                </dl>
+                <dl>
+                    <dt>确认密码</dt>
+                    <dd><input type="password" placeholder="请再次输入新密码"></dd>
+                </dl>
+                <div class="tip error">新密码与原密码不能相同！</div>
+                <div class="xui-dialog-c-btn">
+                    <div class="box">
+                        <span class="confirm" id="">取消</span>
+                        <span class="cancel" id="">确定</span>
+                    </div>
+                </div>
+            </div>
+
+        </dd>
+    </dl>
+</body>
+</html>

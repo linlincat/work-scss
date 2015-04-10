@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery.xui</title>
+    <link rel="stylesheet" type="text/css" href="/resource/assets/views/base/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/resource/assets/views/demo/css/demo.css">
+    <link rel="stylesheet" type="text/css" href="/resource/lib/bootstrap-3.0.3/css/bootstrap.css">
+    <script type="text/javascript">
+        var BASE = {
+            TOP_LEVEL_DOMAIN: '127.0.0.1'
+        };
+    </script>
+    <script type="text/javascript" src="/resource/lib/jquery/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="/resource/lib/jquery.cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/resource/lib/avalon/avalon.shim.js"></script>
+    <script type="text/javascript" src="/resource/lib/requirejs/require.js"></script>
+    <script type="text/javascript" src="/resource/assets/js/main.js"></script>
+</head>
+<body class="demo-body">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- 遮罩层 -->
+                <div class="title">遮罩层</div>
+                <button id="j-masking-show">弹出遮罩层</button>
+
+                <div class="abs masking">
+                    <button id="j-masking-close">关闭遮罩层</button>
+                </div>
+
+                <!-- 屏幕锁 -->
+                <div class="title">屏幕锁</div>
+                <button id="j-lock">开启屏幕锁</button>
+
+                <div class="abs lock">
+                    <button id="j-unlock">关闭屏幕锁</button>
+                </div>
+
+                <!-- 模态定位窗口层 -->
+                <div class="title">模态定位窗口层</div>
+                <button id="j-fixed-window-show">开启定位窗口层</button>
+
+                <!-- 模态对话框 -->
+                <div class="title">模态对话框</div>
+                <button id="j-dialog-show">开启模态对话框</button>
+            </div>
+            <div class="col-md-4">
+                <!-- placeholder -->
+                <div class="title">placeholder</div>
+                <button id="j-placeholder">包装input</button>
+                <div>
+                    <input type="text" class="myholder" id="j-myholder" placeholder="提示文字">
+                </div>
+                <div>
+                    <textarea name="" id="my-textarea" cols="30" rows="10" placeholder="提示文字textarea test"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <!-- tabs -->
+                <div class="title">tabs</div>
+                <button id="j-tabs">初始化tabs</button>
+                <div class="mytabs">
+                    <ul class="xui-tabs">
+                        <li class="xui-tab">页签一</li>
+                        <li class="xui-tab">页签二</li>
+                    </ul>
+                    <div class="xui-tab-content">
+                        <div class="xui-tab-pane active">页签一内容</div>
+                        <div class="xui-tab-pane">页签二内容</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="/resource/assets/views/demo/js/demo-jquery.xui.js"></script>
+</body>
+</html>

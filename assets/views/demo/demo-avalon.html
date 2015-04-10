@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo-avalon</title>
+    <link rel="stylesheet" type="text/css" href="/resource/lib/bootstrap-3.0.3/css/bootstrap.css">
+    <script type="text/javascript" src="/resource/lib/avalon/avalon.shim.js"></script>
+    <style>
+        .ms-controller {
+            /*visibility: hidden;*/
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- avalon.scan()执行之前隐藏插值表达式 -->
+    <div ms-controller="userInfo" class="ms-controller">
+        <span ms-if="!init"><a href="#">loading...</a></span>
+        <span ms-if="init && result">
+            <a href="#">{{loginName}}, 您好</a> |
+            <a href="#">退出</a>
+        </span>
+        <span ms-if="init && !result">
+            <a href="#">登录</a> |
+            <a href="#">注册</a>
+        </span>
+    </div>
+
+    <script type="text/javascript" src="/resource/assets/views/demo/js/demo-avalon.js"></script>
+</body>
+</html>

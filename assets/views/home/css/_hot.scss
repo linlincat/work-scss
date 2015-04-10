@@ -1,0 +1,169 @@
+/**
+ * 首页热销榜
+ * --------------------------------------------------
+ */
+
+ .hot {
+    position: relative;
+    padding-bottom: 32px;
+
+    .hot-left {
+        width: 1000px;
+        height: 562px;
+        @at-root .hot-box {
+            padding: 0px 9px;
+            width: 980px;
+            height: 510px;
+
+            .ul-01 {
+                width: 980px;
+                height: 254px;
+                border-bottom: 1px solid #e3e3e3;
+
+                li {
+                    padding: 20px 15px;
+                    width: 166px;
+                    height: 214px;
+                    float: left;
+                    display: inline;
+                    img {
+                        width: 166px;
+                        height: 150px;
+                        border: 0px;
+                    }
+                    h2 {
+                        height: 25px;
+                        line-height: 25px;
+                        font-size: 20px;
+                        color: $primary-color;
+                    }
+                }
+            }
+            .ul-02 {
+                width: 980px;
+                height: 255px;
+
+                li {
+                    padding: 20px 15px;
+                    width: 166px;
+                    height: 215px;
+                    float: left;
+                    display: inline;
+                    img {
+                        width: 166px;
+                        height: 150px;
+                        border: 0px;
+                    }
+                    h2 {
+                        height: 25px;
+                        line-height: 25px;
+                        font-size: 20px;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        @at-root .hot-title {
+            width: 1000px;
+            height: 50px;
+            background-color: #eee;
+            h2 {
+                display: block;
+                float: left;
+                width: 249px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                cursor: pointer;
+
+                &.lastH2 {
+                    width: 250px;
+                }
+
+                &.no1 {
+                    color: #a655a2;
+                }
+                &.no2 {
+                    color: #ed1b24;
+                }
+                &.no3 {
+                    color: #00a0e8;
+                    i {
+                        margin-top: 14px;
+                        margin-left: 73px;
+                        width: 24px;
+                        height: 24px;
+                        position: relative;
+                        background-image: url('../img/icon/time-1.png?__sprite');
+                        &.ihover {
+                            background-image: url('../img/icon/time-2.png?__sprite');
+                        }
+                    }
+                }
+                &.no4 {
+                    color: #000;
+                }
+                &.white-font {
+                    color: white;
+                }
+            }
+            b {
+                float: left;
+                display: inline;
+                background-color: #fcfcfc;
+                width: 1px;
+                height: 50px;
+            }
+        }
+    }
+
+    .hot-right {
+        width: 205px;
+        height: 562px;
+
+        img {
+            margin-top: 8px;
+            width: 205px;
+            height: 187px;
+            border: 0px;
+        }
+
+        .title-list {
+            width: 205px;
+            height: 172px;
+        }
+        .hot-title {
+            width: 205px;
+            height: 50px;
+            background-image: url('../img/floor/hot-ling.png?__sprite');
+            span {
+                margin-left: 72px;
+                margin-top: 14px;
+            }
+        }
+        .hot-list {
+            padding: 10px;
+            width: 183px;
+            height: 100px;
+            border: 1px solid #d1d1d1;
+
+            a {
+                display: block;
+                height: 22px;
+                line-height: 22px;
+            }
+        }
+    }
+ }
+
+ .home-fullAd {
+    margin-bottom: 32px;
+    width: 1210px;
+    height: 70px;
+    overflow: hidden;
+    img {
+        width: 1210px;
+        height: 70px;
+        border: 0px;
+    }
+ }

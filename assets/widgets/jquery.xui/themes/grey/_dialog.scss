@@ -1,0 +1,136 @@
+/* 模态定位窗口外壳
+--------------------------------*/
+.xui-dialog {
+    font-size: 12px;
+
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+
+    width: 420px;
+    margin-top: -120px;
+    margin-left: -210px;
+
+    border: 4px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    background: transparent;
+
+    _position: absolute;/*IE6*/
+    _top: expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ?
+    documentElement.scrollTop + (document.documentElement.clientHeight)/2 :
+    document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);
+}
+.xui-dialog-t {
+    font-size: 14px;
+    line-height: 40px;
+
+    position: relative;
+
+    height: 40px;
+
+    border-bottom: 1px solid #dfdfdf;
+    background: #fff;
+    span {
+        padding-left: 18px;
+
+        color: #5f5f5f;
+    }
+    s {
+        position: absolute;
+        top: 12px;
+        right: 13px;
+
+        display: block;
+
+        width: 15px;
+        height: 15px;
+
+        cursor: pointer;
+
+        background: url(img/close.png?__sprite);
+    }
+}
+
+/* 对话框内容及按钮
+--------------------------------*/
+.xui-dialog-c {
+    margin: 0;
+
+    border-top: none;
+    background: #fff;
+}
+.xui-dialog-c-tip {
+    width: 300px;
+    margin: 0 auto;
+    p {
+        margin: 0;
+    }
+    .msg {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 30px;
+
+        padding-top: 22px;
+
+        color: #fe8b00;
+        .icon {
+            float: left;
+
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .info {
+            background: url(img/info.png?__sprite);
+
+            @extend .icon;
+        }
+        .error {
+            background: yellow;
+
+            @extend .icon;
+        }
+    }
+    .msg-des {
+        margin-top: 3px;
+        margin-bottom: 12px;
+        padding-left: 40px;
+
+        word-wrap: break-word;
+        word-break: break-all;
+
+        color: #9a9a9a;
+    }
+}
+.xui-dialog-c-btn {
+    height: 66px;
+    padding-left: 100px;
+    .box {
+        float: left;
+        .btn {
+            font-size: 12px;
+
+            float: right;
+
+            margin-right: 10px;
+            padding: 4px 20px;
+
+            cursor: pointer;
+        }
+        .confirm {
+            color: #fff;
+            border: 1px solid #2888ff;
+            background: #2888ff;
+
+            @extend .btn;
+        }
+        .cancel {
+            color: #5f5f5f;
+            border: 1px solid #dbdbdb;
+            background-color: #f4f4f4;
+
+            @extend .btn;
+        }
+    }
+}
